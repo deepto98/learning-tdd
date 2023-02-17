@@ -1,15 +1,19 @@
 package main
 
 type Stack struct {
+	isEmpty bool
 }
 
 func NewStack() *Stack {
-	return &Stack{}
+	return &Stack{
+		isEmpty: true,
+	}
 }
 
 func (stack *Stack) Empty() bool {
-	return true
+	return stack.isEmpty
 }
 
 func (stack *Stack) Add(val int) {
+	stack.isEmpty = false
 }
