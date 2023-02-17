@@ -10,3 +10,6 @@ func NewStack() *Stack {
 func (stack *Stack) Empty() bool {
 	return true
 }
+
+func (stack *Stack) Add(val int) {
+}

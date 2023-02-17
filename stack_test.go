@@ -20,7 +20,7 @@ func TestNotEmpty(t *testing.T) {
 	// Add method is written after this case is defined
 	stack.Add(1)
 
-	if stack.Empty() == true {
+	if stack.Empty() != false {
 		t.Error("Stack is empty")
 	}
 }
