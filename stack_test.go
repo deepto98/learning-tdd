@@ -24,3 +24,10 @@ func TestNotEmpty(t *testing.T) {
 		t.Error("Stack is empty")
 	}
 }
+func TestSizeZero(t *testing.T) {
+	stack := NewStack()
+
+	if stack.Size != 0 {
+		t.Error("Size is not zero")
+	}
+}

@@ -5,4 +5,4 @@ Having avoided tests all my life, I guess its finally time to learn what the hec
 
 ## Steps
 1. Test to check if stack is empty. Idea is to write the test first, and implement the actual code along with the tests, with the aim to make tests pass. Command to run tests
-2. Rules : Test filename must end with `_test.go`. Command to run tests : `go test` 
+2. Rules : Test filename must end with `_test.go`. Every test method must start with `Test` Command to run tests : `go test` 
