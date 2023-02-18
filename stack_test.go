@@ -86,4 +86,15 @@ func TestPopTwo(t *testing.T) {
 		t.Errorf("Expected size : 1. Received: %d", stack.Size())
 
 	}
+
+	//11 has to be popped
+	valTwo := stack.Pop()
+	if valTwo != 11 {
+		t.Errorf("Expected 11. Received: %d", valTwo)
+	}
+
+	if stack.Size() != 0 {
+		t.Errorf("Expected size : 0. Received: %d", stack.Size())
+
+	}
 }
