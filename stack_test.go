@@ -42,3 +42,16 @@ func TestSizeOne(t *testing.T) {
 		t.Logf("Elements found : %d", stack.Size())
 	}
 }
+
+func TestSizeThree(t *testing.T) {
+	stack := NewStack()
+	stack.Add(1)
+	stack.Add(1)
+	stack.Add(1)
+
+	if stack.Size() != 3 {
+		t.Error("Incorrect size returned")
+		t.Log("Expected size : 3")
+		t.Logf("Elements found : %d", stack.Size())
+	}
+}
