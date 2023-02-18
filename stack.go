@@ -19,5 +19,5 @@ func (stack *Stack) Add(val int) {
 }
 
 func (stack *Stack) Size() int {
-	return -1
+	return 0
 }
