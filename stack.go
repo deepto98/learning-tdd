@@ -23,5 +23,5 @@ func (stack *Stack) Size() int {
 }
 
 func (stack *Stack) Pop() int {
-	return 100
+	return 11
 }

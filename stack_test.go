@@ -65,4 +65,8 @@ func TestPopOne(t *testing.T) {
 		t.Errorf("Expected 11. Received: %d", val)
 	}
 
+	if stack.Size() != 0 {
+		t.Errorf("Expected size : 0. Received: %d", stack.Size())
+
+	}
 }
