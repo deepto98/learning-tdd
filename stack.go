@@ -23,5 +23,6 @@ func (stack *Stack) Size() int {
 }
 
 func (stack *Stack) Pop() int {
+	stack.size--
 	return 11
 }
