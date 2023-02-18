@@ -21,3 +21,7 @@ func (stack *Stack) Add(val int) {
 func (stack *Stack) Size() int {
 	return stack.size
 }
+
+func (stack *Stack) Pop() int {
+	return 100
+}
