@@ -1,7 +1,8 @@
 package main
 
 type Stack struct {
-	size int
+	size  int
+	value int
 }
 
 func NewStack() *Stack {
@@ -16,6 +17,7 @@ func (stack *Stack) Empty() bool {
 
 func (stack *Stack) Add(val int) {
 	stack.size++
+	stack.value = val
 }
 
 func (stack *Stack) Size() int {
@@ -24,5 +26,5 @@ func (stack *Stack) Size() int {
 
 func (stack *Stack) Pop() int {
 	stack.size--
-	return 11
+	return stack.value
 }
