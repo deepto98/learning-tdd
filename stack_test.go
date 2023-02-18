@@ -55,3 +55,14 @@ func TestSizeThree(t *testing.T) {
 		t.Logf("Elements found : %d", stack.Size())
 	}
 }
+
+func TestPopOne(t *testing.T) {
+	stack := NewStack()
+	stack.Add(11)
+	val := stack.Pop()
+
+	if val != 11 {
+		t.Errorf("Expected 11. Received: %d", val)
+	}
+
+}
