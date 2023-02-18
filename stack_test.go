@@ -28,6 +28,16 @@ func TestSizeZero(t *testing.T) {
 	stack := NewStack()
 
 	if stack.Size() != 0 {
-		t.Errorf("Expected : 0. ELements found : %d", stack.Size())
+		t.Errorf("Expected size : 0. ELements found : %d", stack.Size())
+	}
+}
+
+func TestSizeOne(t *testing.T) {
+	stack := NewStack()
+	stack.Add(12)
+
+	if stack.Size() != 1 {
+		t.Error("Incorrect size")
+		t.Logf("Expected size : 1. Elements found : %d", stack.Size())
 	}
 }
