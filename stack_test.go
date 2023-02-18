@@ -70,3 +70,20 @@ func TestPopOne(t *testing.T) {
 
 	}
 }
+
+func TestPopTwo(t *testing.T) {
+	stack := NewStack()
+	stack.Add(11)
+	stack.Add(20)
+	val := stack.Pop()
+
+	// LIFO - 20 has to be popped
+	if val != 20 {
+		t.Errorf("Expected 20. Received: %d", val)
+	}
+
+	if stack.Size() != 1 {
+		t.Errorf("Expected size : 1. Received: %d", stack.Size())
+
+	}
+}
