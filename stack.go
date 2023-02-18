@@ -17,3 +17,7 @@ func (stack *Stack) Empty() bool {
 func (stack *Stack) Add(val int) {
 	stack.isEmpty = false
 }
+
+func (stack *Stack) Size() int {
+	return -1
+}

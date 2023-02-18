@@ -27,7 +27,7 @@ func TestNotEmpty(t *testing.T) {
 func TestSizeZero(t *testing.T) {
 	stack := NewStack()
 
-	if stack.Size != 0 {
-		t.Error("Size is not zero")
+	if stack.Size() != 0 {
+		t.Errorf("Expected : 0. ELements found : %d", stack.Size())
 	}
 }
