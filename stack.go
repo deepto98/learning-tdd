@@ -19,5 +19,10 @@ func (stack *Stack) Add(val int) {
 }
 
 func (stack *Stack) Size() int {
+
+	if !stack.isEmpty {
+		return 1
+	}
+
 	return 0
 }

@@ -38,6 +38,7 @@ func TestSizeOne(t *testing.T) {
 
 	if stack.Size() != 1 {
 		t.Error("Incorrect size")
-		t.Logf("Expected size : 1. Elements found : %d", stack.Size())
+		t.Log("Expected size : 1")
+		t.Logf("Elements found : %d", stack.Size())
 	}
 }
